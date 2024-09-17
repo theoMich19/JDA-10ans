@@ -25,22 +25,20 @@ export default function Home() {
   const status = !gameStatus && secretWord;
 
   return (
-    <div className="h-[100vh] w-[100vw] ">
+    <div className="h-[100vh] w-[100vw] overflow-x-hidden ">
+      <a
+        href="https://www.jeunesdanseursavignonnais.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          className="w-full bg-no-repeat bg-top bg-cover z-10 cursor-pointer h-[200px]"
+          style={{
+            backgroundImage: "url('images/couverture.png')",
+          }}
+        ></div>
+      </a>
       <div className="w-full h-full bg-black bg-cover">
-        <a
-          href="https://www.jeunesdanseursavignonnais.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div
-            className="w-full bg-no-repeat bg-top bg-cover z-10 cursor-pointer"
-            style={{
-              backgroundImage: "url('images/couverture.png')",
-              height: "200px",
-            }}
-          ></div>
-        </a>
-
         <div className="flex flex-col h-full items-center ">
           {isOpen && (
             <ModalGame
