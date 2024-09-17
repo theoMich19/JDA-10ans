@@ -42,7 +42,7 @@ export const RemainingAttempts = ({ remainingAttempts, wordLength }) => {
           {[...Array(wordLength)].map((_, letterIndex) => (
             <div
               key={letterIndex}
-              className="max-md:w-12 max-md:h-12 w-14 h-14 flex justify-center items-center rounded-lg shadow-card backdrop-filter backdrop-blur"
+              className="max-md:w-12 max-md:h-12 w-14 h-14 flex justify-center items-center rounded-lg shadow-card backdrop-filter backdrop-blur bg-gray-500"
             ></div>
           ))}
         </div>
