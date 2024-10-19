@@ -9,8 +9,7 @@ import { numberToWord } from "./utils/transform";
 export default function Home() {
   const [gameStatus, setGameStatus] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-
-  const secretWord = "DANSEUR";
+  const secretWord = "BOWLING";
   const valueindex = numberToWord(secretWord.length);
   const listWords = dico;
   const dicoUsed = listWords[valueindex];
