@@ -33,7 +33,7 @@ export default function Home() {
         <div
           className="w-full bg-no-repeat bg-top bg-cover z-10 cursor-pointer h-[200px]"
           style={{
-            backgroundImage: "url('images/couverture.png')",
+            backgroundImage: "url('images/MISSION.png')",
           }}
         ></div>
       </a>
